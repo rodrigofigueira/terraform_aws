@@ -1,25 +1,25 @@
 variable "environment" {
-  type = string
+  type        = string
   description = ""
 }
 
 variable "bucketName" {
-  type = string
+  type        = string
   description = "Nome do Bucket"
-  default = "s3-basic-terraform"
+  default     = "s3-basic-terraform"
 }
 
 variable "region" {
-  type = string
+  type        = string
   description = "Região do Bucket"
-  default = "us-east-1"
+  default     = "us-east-1"
 }
 
 variable "tagsBucket" {
-  type = map(string)
+  type        = map(string)
   description = "Tags do Bucket"
   default = {
-    Name = "Terraform Udemy"
+    Name  = "Terraform Udemy"
     Owner = "Rodrigo Figueira"
   }
 }
